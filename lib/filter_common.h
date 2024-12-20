@@ -4,17 +4,14 @@
 #include <cmath>
 #include <functional>
 
-#define COEFF_SIZE_DOUBLE
-//#define COEFF_SIZE_FLOAT
+#include <concepts>
 
-#ifndef pi
-#define pi  3.1415926535897932384626433832795
-#endif
+template <std::floating_point T>
+constexpr auto pi =
+    static_cast<T>(3.1415926535897932384626433832795);
 
-#ifndef sqrt2
-#define sqrt2	(2.0 * 0.707106781186547524401)
-#endif
+template <std::floating_point T>
+constexpr auto sqrt2 = static_cast<T>(2.0 * 0.707106781186547524401);
 
-#ifndef sqrt2over2
-#define sqrt2over2  0.707106781186547524401
-#endif
+template <std::floating_point T>
+constexpr auto sqrt2over2 = static_cast<T>(0.707106781186547524401);
