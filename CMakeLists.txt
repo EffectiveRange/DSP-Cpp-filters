@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(DSP-Cpp-filters VERSION 1.0.0 DESCRIPTION "DSP C++ audio filters")
 
-option(BUILD_UNIT_TESTS "Build the tests" ON)
+option(BUILD_UNIT_TESTS "Build the tests" OFF)
 option(DSP_FILTERS_DOUBLE_PRECISION "use double for coefficients" OFF)
 
 add_library(dsp-filters INTERFACE)
